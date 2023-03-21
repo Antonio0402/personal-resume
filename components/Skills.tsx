@@ -1,6 +1,6 @@
 "use client";
 
-import { SkillProps } from "@/data/page-data";
+import { SkillProps } from "@/data/type";
 import { atom, useAtom } from "jotai";
 
 const ActiveTabAtom = atom<string>("soft");

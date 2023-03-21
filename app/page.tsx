@@ -1,11 +1,15 @@
 import { AboutMe, ProfessionalExperience } from "@/sections";
-import { aboutMe, skills, professionalData } from "@/data/page-data";
+import { get } from "@vercel/edge-config";
 
-export default function Home() {
+export default async function Home() {
+  const aboutMe = await get("aboutMe");
+  const skills = await get("skills");
+  const professionalData = await get("professionalData");
+
   return (
     <div className="">
-      <AboutMe data={aboutMe} skills={skills} />
-      <ProfessionalExperience data={professionalData} />
+      <AboutMe data={Object(aboutMe)} skills={Object(skills)} />
+      <ProfessionalExperience data={Object(professionalData)} />
     </div>
   );
 }

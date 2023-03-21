@@ -1,4 +1,4 @@
-import { AboutMe, SkillProps } from "@/data/page-data";
+import { AboutMe, SkillProps } from "@/data/type";
 import { Skills } from "@/components";
 
 const AboutMe = ({ data, skills }: { data: AboutMe; skills: SkillProps }) => {

@@ -1,4 +1,4 @@
-import { PersonalData } from "@/data/page-data";
+import { PersonalData } from "@/data/type";
 import { Envelope, Twitter, Linkedin, Medium } from "@/icons";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,4 +1,4 @@
-import { ProfessionalData } from "@/data/page-data";
+import { ProfessionalData } from "@/data/type";
 import React from "react";
 
 const ProfessionalExperience = ({ data }: { data: ProfessionalData }) => {
